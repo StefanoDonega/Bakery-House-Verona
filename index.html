@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery House - Verona | Colazioni, Pranzi, Cene e Brunch</title>
+    <meta
+      name="description"
+      content="Bakery House a Verona: la tua destinazione per ricche colazioni, pranzi gustosi, cene raffinate e brunch del weekend dal 2022."
+    />
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <span class="logo-text">Bakery House</span>
+          </a>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="il_locale/index.html" class="nav-link">Il Locale</a>
+          <a href="menu/index.html" class="nav-link">Menu</a>
+          <a href="eventi/index.html" class="nav-link">Eventi</a>
+          <a href="#" class="nav-link cta-btn">Prenota</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-background"></div>
+      <div class="hero-content">
+        <div class="hero-logo">
+          <h1 class="logo-main">Bakery House</h1>
+          <p class="hero-catchphrase">Dove ogni momento diventa delizioso</p>
+        </div>
+        <p class="logo-subtitle">Verona</p>
+
+        <button class="cta-button" id="hero-cta">
+          <i class="fas fa-calendar-alt"></i>
+          Prenota Ora
+        </button>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- Il Locale Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">Il Nostro Locale</h2>
+            <p class="about-description">
+              Bakery House è nata nel 2022 nel cuore di Verona con una missione
+              semplice ma ambiziosa: creare un luogo dove tradizione e
+              innovazione si incontrano per offrire esperienze culinarie
+              indimenticabili.
+            </p>
+            <p class="about-description">
+              Situati in una delle zone più affascinanti della città, offriamo
+              ricche colazioni per iniziare la giornata con energia, pranzi
+              gustosi per una pausa rigenerante, cene raffinate per momenti
+              speciali e brunch del weekend per rilassarsi in compagnia.
+            </p>
+            <div class="about-features">
+              <div class="feature">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Centro Storico di Verona</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-clock"></i>
+                <span>Aperto 7 giorni su 7</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-heart"></i>
+                <span>Ingredienti di qualità</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-placeholder">
+              <i class="fas fa-store"></i>
+              <p>Foto del locale</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <h2 class="section-title">I Nostri Menu</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <div class="menu-icon">
+              <i class="fas fa-coffee"></i>
+            </div>
+            <h3>Colazione</h3>
+            <p class="menu-time">07:00 - 11:00</p>
+            <p class="menu-description">
+              Cornetti freschi, cappuccini cremosi e dolci della casa per
+              iniziare al meglio la giornata.
+            </p>
+            <a href="menu/index.html#colazione" class="menu-link"
+              >Scopri il Menu</a
+            >
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-icon">
+              <i class="fas fa-sun"></i>
+            </div>
+            <h3>Brunch Weekend</h3>
+            <p class="menu-time">Sab-Dom 10:00 - 16:00</p>
+            <p class="menu-description">
+              Il meglio di colazione e pranzo in un'unica esperienza rilassante.
+            </p>
+            <a href="menu/index.html#brunch" class="menu-link"
+              >Scopri il Menu</a
+            >
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h3>Pranzo</h3>
+            <p class="menu-time">12:00 - 15:00</p>
+            <p class="menu-description">
+              Piatti freschi e leggeri, perfetti per una pausa pranzo di
+              qualità.
+            </p>
+            <a href="menu/index.html#pranzo" class="menu-link"
+              >Scopri il Menu</a
+            >
+          </div>
+
+          <div class="menu-card">
+            <div class="menu-icon">
+              <i class="fas fa-wine-glass-alt"></i>
+            </div>
+            <h3>Cena</h3>
+            <p class="menu-time">19:00 - 23:00</p>
+            <p class="menu-description">
+              Atmosfera intima e piatti raffinati per serate indimenticabili.
+            </p>
+            <a href="menu/index.html#cena" class="menu-link">Scopri il Menu</a>
+          </div>
+        </div>
+
+        <!-- Delivery Section -->
+        <div class="delivery-section">
+          <h3>Servizio Delivery</h3>
+          <p>Ordina comodamente da casa con i nostri partner</p>
+          <div class="delivery-partners">
+            <button class="delivery-btn" data-partner="justeat">
+              <i class="fas fa-motorcycle"></i>
+              Just Eat
+            </button>
+            <button class="delivery-btn" data-partner="deliveroo">
+              <i class="fas fa-bicycle"></i>
+              Deliveroo
+            </button>
+            <button class="delivery-btn" data-partner="toogoodtogo">
+              <i class="fas fa-leaf"></i>
+              Too Good To Go
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eventi Section -->
+    <section class="events-section" id="events">
+      <div class="container">
+        <h2 class="section-title">I Nostri Eventi</h2>
+        <div class="events-carousel">
+          <div class="carousel-container">
+            <div class="event-card active">
+              <div class="event-image">
+                <i class="fas fa-music"></i>
+              </div>
+              <div class="event-content">
+                <h3>Musica dal Vivo</h3>
+                <p class="event-date">Ogni Venerdì sera</p>
+                <p class="event-description">
+                  Artisti locali e non solo per accompagnare le tue cene con
+                  melodie indimenticabili.
+                </p>
+              </div>
+            </div>
+
+            <div class="event-card">
+              <div class="event-image">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="event-content">
+                <h3>Laboratori di Pasticceria</h3>
+                <p class="event-date">Ogni Sabato mattina</p>
+                <p class="event-description">
+                  Impara i segreti della pasticceria, adulti e bambini
+                  benvenuti!
+                </p>
+              </div>
+            </div>
+
+            <div class="event-card">
+              <div class="event-image">
+                <i class="fas fa-birthday-cake"></i>
+              </div>
+              <div class="event-content">
+                <h3>Eventi Privati</h3>
+                <p class="event-date">Su prenotazione</p>
+                <p class="event-description">
+                  Compleanni, anniversari e celebrazioni speciali nel nostro
+                  accogliente locale.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-controls event-three">
+            <button class="carousel-btn prev" id="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="carousel-dots">
+              <span class="dot active" data-slide="0"></span>
+              <span class="dot" data-slide="1"></span>
+              <span class="dot" data-slide="2"></span>
+            </div>
+            <button class="carousel-btn next" id="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="events-cta">
+          <a href="eventi/index.html" class="secondary-btn"
+            >Vedi Tutti gli Eventi</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="final-cta" id="final-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ti Abbiamo Convinto?</h2>
+          <p>
+            Vieni a trovarci o prenota il tuo tavolo per un'esperienza
+            indimenticabile
+          </p>
+          <button class="cta-button large" id="final-book-btn">
+            <i class="fas fa-calendar-check"></i>
+            Prenota il Tuo Tavolo
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Bakery House</h3>
+            <p>
+              Il tuo locale del cuore a Verona dal 2022. Dove ogni momento
+              diventa delizioso.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contatti</h4>
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> Via Roma 123, Verona</p>
+              <p><i class="fas fa-phone"></i> +39 045 123 4567</p>
+              <p><i class="fas fa-envelope"></i> info@bakeryhouse.it</p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Orari</h4>
+            <div class="hours">
+              <p><strong>Lun-Ven:</strong> 07:00 - 23:00</p>
+              <p><strong>Sab-Dom:</strong> 08:00 - 24:00</p>
+              <p><strong>Brunch:</strong> Sab-Dom 10:00 - 16:00</p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Link Utili</h4>
+            <ul class="footer-links">
+              <li><a href="menu/index.html">Menu</a></li>
+              <li><a href="eventi/index.html">Eventi</a></li>
+              <li><a href="il_locale/index.html">Il Locale</a></li>
+              <li><a href="#">Prenota</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Bakery House Verona. Fatto con il ❤️ da Stefano Donegà.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

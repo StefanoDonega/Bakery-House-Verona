@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Bakery House Verona | Colazioni, Pranzi, Cene e Brunch</title>
+    <meta
+      name="description"
+      content="Scopri il menu completo di Bakery House: colazioni ricche, pranzi gustosi, cene raffinate e brunch del weekend. Ingredienti freschi e di qualità."
+    />
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="menu-style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="../index.html">
+            <span class="logo-text">Bakery House</span>
+          </a>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="../il_locale/index.html" class="nav-link">Il Locale</a>
+          <a href="index.html" class="nav-link active">Menu</a>
+          <a href="../eventi/index.html" class="nav-link">Eventi</a>
+          <a href="#" class="nav-link cta-btn">Prenota</a>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!--  Header -->
+    <section class="page-header">
+      <div class="header-background"></div>
+      <div class="header-content">
+        <h1>Il Nostro Menu</h1>
+        <p>Sapori autentici per ogni momento della giornata</p>
+      </div>
+    </section>
+
+    <!-- Menu Navigation -->
+    <section class="menu-nav">
+      <div class="container">
+        <div class="menu-tabs">
+          <button class="tab-btn active" data-menu="colazione">
+            <i class="fas fa-coffee"></i>
+            Colazione
+          </button>
+          <button class="tab-btn" data-menu="pranzo">
+            <i class="fas fa-utensils"></i>
+            Pranzo
+          </button>
+          <button class="tab-btn" data-menu="cena">
+            <i class="fas fa-wine-glass-alt"></i>
+            Cena
+          </button>
+          <button class="tab-btn" data-menu="brunch">
+            <i class="fas fa-sun"></i>
+            Brunch
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Colazione Menu -->
+    <section class="menu-content active" id="colazione">
+      <div class="container">
+        <div class="menu-header">
+          <h2>Colazione</h2>
+          <p class="menu-hours">Dalle 07:00 alle 11:00</p>
+          <p class="menu-description">
+            Inizia la tua giornata con i nostri cornetti freschi, caffè di
+            qualità e dolci della casa.
+          </p>
+        </div>
+
+        <div class="menu-categories">
+          <div class="category">
+            <h3>Dolci da Forno</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Cornetto Classico</h4>
+                  <p>Fragrante cornetto vuoto, preparato al momento</p>
+                </div>
+                <span class="price">€1.50</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Cornetto Crema</h4>
+                  <p>Con crema pasticcera della casa</p>
+                </div>
+                <span class="price">€2.00</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Cornetto Marmellata</h4>
+                  <p>Con marmellata di albicocche biologiche</p>
+                </div>
+                <span class="price">€1.80</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Pain au Chocolat</h4>
+                  <p>Sfoglia francese con cioccolato fondente</p>
+                </div>
+                <span class="price">€2.20</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Caffetteria</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Espresso</h4>
+                  <p>Miscela arabica della casa</p>
+                </div>
+                <span class="price">€1.20</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Cappuccino</h4>
+                  <p>Con latte fresco e schiuma cremosa</p>
+                </div>
+                <span class="price">€1.50</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Latte Macchiato</h4>
+                  <p>Servito in vetro alto con strati perfetti</p>
+                </div>
+                <span class="price">€2.00</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Caffè Americano</h4>
+                  <p>Espresso allungato con acqua calda</p>
+                </div>
+                <span class="price">€1.80</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Colazioni Speciali</h3>
+            <div class="menu-items">
+              <div class="menu-item featured">
+                <div class="item-info">
+                  <h4>Colazione Bakery House</h4>
+                  <p>
+                    Cornetto, cappuccino, succo d'arancia e biscotti della casa
+                  </p>
+                </div>
+                <span class="price">€6.50</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Colazione Fit</h4>
+                  <p>Yogurt greco, granola, frutta fresca e miele</p>
+                </div>
+                <span class="price">€5.80</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pranzo Menu -->
+    <section class="menu-content" id="pranzo">
+      <div class="container">
+        <div class="menu-header">
+          <h2>Pranzo</h2>
+          <p class="menu-hours">Dalle 12:00 alle 15:00</p>
+          <p class="menu-description">
+            Piatti freschi e leggeri per una pausa pranzo di qualità.
+          </p>
+        </div>
+
+        <div class="menu-categories">
+          <div class="category">
+            <h3>Antipasti</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Tagliere di Formaggi</h4>
+                  <p>Selezione di formaggi locali con miele e noci</p>
+                </div>
+                <span class="price">€12.00</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Bruschette Miste</h4>
+                  <p>Pomodoro e basilico, ricotta e spinaci, salmone</p>
+                </div>
+                <span class="price">€8.50</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Primi Piatti</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Risotto ai Porcini</h4>
+                  <p>Riso Carnaroli con funghi porcini e Grana Padano</p>
+                </div>
+                <span class="price">€14.00</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Pasta al Pomodoro e Basilico</h4>
+                  <p>Spaghetti con pomodori San Marzano e basilico fresco</p>
+                </div>
+                <span class="price">€11.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Secondi Piatti</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Salmone alla Griglia</h4>
+                  <p>Con verdure di stagione e salsa all'aneto</p>
+                </div>
+                <span class="price">€18.00</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Petto di Pollo alle Erbe</h4>
+                  <p>Con patate arrosto e insalata mista</p>
+                </div>
+                <span class="price">€15.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cena Menu -->
+    <section class="menu-content" id="cena">
+      <div class="container">
+        <div class="menu-header">
+          <h2>Cena</h2>
+          <p class="menu-hours">Dalle 19:00 alle 23:00</p>
+          <p class="menu-description">
+            Atmosfera intima e piatti raffinati per serate indimenticabili.
+          </p>
+        </div>
+
+        <div class="menu-categories">
+          <div class="category">
+            <h3>Antipasti Gourmet</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Crudo di Ricciola</h4>
+                  <p>Con agrumi, olio extravergine e pepe rosa</p>
+                </div>
+                <span class="price">€16.00</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Vitello Tonnato</h4>
+                  <p>Versione moderna del classico piemontese</p>
+                </div>
+                <span class="price">€14.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Primi Raffinati</h3>
+            <div class="menu-items">
+              <div class="menu-item featured">
+                <div class="item-info">
+                  <h4>Risotto all'Amarone</h4>
+                  <p>Con radicchio di Treviso e gorgonzola DOP</p>
+                </div>
+                <span class="price">€18.00</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Tortellini in Brodo di Cappone</h4>
+                  <p>Pasta fresca ripiena, tradizione emiliana</p>
+                </div>
+                <span class="price">€16.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Secondi d'Autore</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Filetto di Manzo</h4>
+                  <p>Con riduzione di Barolo e verdure glassate</p>
+                </div>
+                <span class="price">€28.00</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Branzino in Crosta di Sale</h4>
+                  <p>Con patate novelle e salsa verde</p>
+                </div>
+                <span class="price">€24.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brunch Menu -->
+    <section class="menu-content" id="brunch">
+      <div class="container">
+        <div class="menu-header">
+          <h2>Brunch Weekend</h2>
+          <p class="menu-hours">Sabato e Domenica dalle 10:00 alle 16:00</p>
+          <p class="menu-description">
+            Il meglio di colazione e pranzo in un'unica esperienza rilassante.
+          </p>
+        </div>
+
+        <div class="menu-categories">
+          <div class="category">
+            <h3>Dolci del Brunch</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Pancakes Americani</h4>
+                  <p>Con sciroppo d'acero, burro e frutta fresca</p>
+                </div>
+                <span class="price">€9.50</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>French Toast</h4>
+                  <p>Pan brioche dorato con cannella e miele</p>
+                </div>
+                <span class="price">€8.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Salati del Brunch</h3>
+            <div class="menu-items">
+              <div class="menu-item featured">
+                <div class="item-info">
+                  <h4>Eggs Benedict</h4>
+                  <p>Uova in camicia, prosciutto cotto e salsa olandese</p>
+                </div>
+                <span class="price">€12.00</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Avocado Toast</h4>
+                  <p>Pane integrale, avocado, pomodorini e semi</p>
+                </div>
+                <span class="price">€10.50</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Bevande Speciali</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Mimosa</h4>
+                  <p>Prosecco DOCG e succo d'arancia fresco</p>
+                </div>
+                <span class="price">€6.00</span>
+              </div>
+              <div class="menu-item">
+                <div class="item-info">
+                  <h4>Bloody Mary</h4>
+                  <p>Cocktail classico con sedano e spezie</p>
+                </div>
+                <span class="price">€8.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="menu-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Pronto ad Assaggiare?</h2>
+          <p>
+            Prenota il tuo tavolo e vieni a scoprire i sapori autentici di
+            Bakery House
+          </p>
+          <button class="cta-button large">
+            <i class="fas fa-calendar-check"></i>
+            Prenota Ora
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Bakery House</h3>
+            <p>
+              Il tuo locale del cuore a Verona dal 2022. Dove ogni momento
+              diventa delizioso.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contatti</h4>
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> Via Roma 123, Verona</p>
+              <p><i class="fas fa-phone"></i> +39 045 123 4567</p>
+              <p><i class="fas fa-envelope"></i> info@bakeryhouse.it</p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Orari</h4>
+            <div class="hours">
+              <p><strong>Lun-Ven:</strong> 07:00 - 23:00</p>
+              <p><strong>Sab-Dom:</strong> 08:00 - 24:00</p>
+              <p><strong>Brunch:</strong> Sab-Dom 10:00 - 16:00</p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Link Utili</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Menu</a></li>
+              <li><a href="../eventi/index.html">Eventi</a></li>
+              <li><a href="../il_locale/index.html">Il Locale</a></li>
+              <li><a href="#">Prenota</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Bakery House Verona. Fatto con il ❤️ da Stefano Donegà.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="menu-script.js"></script>
+  </body>
+</html>
