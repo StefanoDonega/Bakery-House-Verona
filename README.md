@@ -1,4 +1,4 @@
-# 🍰 Bakery House - Sito Web di Allenamento
+# 🍰 Benvenuti da Bakery House!
 
 Un progetto di sito web completo per una bakery immaginaria situata a Verona, sviluppato come **progetto di allenamento** per dimostrare le competenze di sviluppo web con tecnologie fondamentali.
 
